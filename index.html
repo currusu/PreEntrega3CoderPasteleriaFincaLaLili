@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/images/logofinca500x500.jpg">
+    <title>Finca La Lili: Salón de té</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="./public/styles.css">
+
+</head>
+
+<body>
+
+    <header>
+        <h1>Finca La Lili: Salón de té</h1>
+        <h2><img src="images/logofinca500x500.jpg" alt="Logo de la finca"></h2>
+        <button id="cesta-carrito"><i class="fas fa-shopping-cart"></i><span id="contador-carrito"></span></button>
+    </header>
+
+
+    <main id="producto-contenedor">
+
+    </main>
+
+
+    <div class="modal-contenedor">
+        <div class="modal-carrito">
+
+            <h3>Carrito</h3>
+            <button id="btn-cerrar-carrito"><i class="fas fa-times-circle"></i></button>
+            <div id="carrito-contenedor">
+
+            </div>
+            <p class="precioProducto">Precio Total : $<span id="precioTotal"></span></p>
+
+            <button class="btn waves-effect waves-ligh boton-eliminar" value="">X</button>
+
+        </div>
+    </div>
+
+    <script type="text/javascript" src="/data/stock.js"></script>
+    <script type="text/javascript" src="/js/modal.js"></script>
+    <script type="text/javascript" src="/js/cart.js"></script>
+    <script type="text/javascript" src="/js/home.js"></script>
+    <script type="text/javascript" src="/js/index.js"></script>
+    <script type="text/javascript" src="https://kit.fontawesome.com/df59baf6b8.js " crossorigin=anonymous></script>
+
+</body>
+
+</html>
