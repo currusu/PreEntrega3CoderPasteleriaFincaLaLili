@@ -26,9 +26,8 @@ const validarProductoEnCarrito = (id) => {
     } else {
 
         const producto = carrito.find(producto => producto.id)
-        const cantidad = document.getElementById(`cantidad${producto.id}`)
         producto.cantidad++
-        cantidad.innerText = `Cantidad: ${producto.id}`
+        pintarCarrito(carrito)
         actualizarTotalesCarrito(carrito)
     }
 
